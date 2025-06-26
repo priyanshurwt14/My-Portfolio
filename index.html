@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    header, main, section, footer {
+      width: 100%;
+    }
+
+    #navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      font-size: 30px;
+    }
+
+    .right ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    .menu:hover {
+      color: gray;
+    }
+
+    .box1 {
+      background: url('https://images.unsplash.com/photo-1728904573564-ef2e57d0f011?q=80&w=2126') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: left;
+    }
+
+    .first_name,
+    .last_name {
+      font-size: 60px;
+    }
+
+    .work {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .cv {
+      margin-top: 20px;
+    }
+
+    .cv button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    #box2 {
+      background: url('https://images.unsplash.com/photo-1690983321281-965106a1224c?q=80&w=1170') center/cover no-repeat;
+      padding: 60px 20px;
+      color: black;
+      text-align: center;
+    }
+
+    .about {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .intro,
+    .qualification {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .qualification {
+      border: 2px solid royalblue;
+    }
+
+    #box3 {
+      background: url('https://images.unsplash.com/photo-1638905132201-532d10903ea1?w=600') center/cover no-repeat;
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .pannel1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .pannel2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .summary, .project_photo {
+      flex: 1 1 300px;
+      max-width: 500px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .project_photo {
+      background-image: url('project_ss.png');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      border: 2px solid white;
+    }
+
+    .summary button {
+      padding: 10px 20px;
+      background-color: rgb(112, 210, 255);
+      border-radius: 10px;
+      border: none;
+    }
+
+    .contact {
+      background: url('https://plus.unsplash.com/premium_photo-1672940671025-113a634f83d1?w=600') center/cover no-repeat;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .main button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: rgb(112, 210, 255);
+      border-radius: 10px;
+      border: none;
+    }
+
+    footer p {
+      margin-top: 30px;
+      font-size: 16px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .first_name, .last_name {
+        font-size: 40px;
+      }
+
+      .right ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .pannel2 {
+        flex-direction: column;
+      }
+
+      .summary, .project_photo {
+        max-width: 100%;
+      }
+
+      .intro, .qualification, .main {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div id="navbar">
+      <div class="left">Rawat</div>
+      <div class="right">
+        <ul>
+          <li><a href="#" class="menu">Home</a></li>
+          <li><a href="#box2" class="menu">About</a></li>
+          <li><a href="#box3" class="menu">Project</a></li>
+          <li><a href="#contact" class="menu">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="box1">
+      <div class="first_name">PRIYANSHU</div>
+      <div class="last_name">RAWAT</div>
+      <div class="work">W E B  D E V E L O P E R & D E S I G N E R</div>
+      <div class="cv">
+        <a href="https://drive.google.com/uc?export=download&id=12GCF2tCzHfjWtc94xQNG37juPBXjGpta">
+        <button><b>Download CV</b></button></a>
+      </div>
+    </section>
+
+    <section id="box2">
+      <div class="about"><h1>About</h1></div>
+      <div class="intro">
+        <p>Hey there, I'm <b>Priyanshu Rawat</b> - a <b>web developer and designer</b> with a passion for creating websites that not only look fantastic but also make users go "wow." My goal is simple: to blend eye-catching visuals with seamless functionality, giving your audience an experience they won't forget.</p>
+      </div>
+      <div class="qualification">
+        <p><u><i>Qualifications</i></u></p><br>
+        <h3>Bachelor's In Computer Application</h3>
+        <p><i>Advanced Institute of Technology and Management</i></p>
+        <h3>Matriculation</h3>
+        <p><i>Divine Public School, Faridabad</i></p>
+      </div>
+    </section>
+
+    <section id="box3">
+      <div class="pannel1"><h1>Project</h1></div>
+      <div class="pannel2">
+        <div class="summary">
+          <p><i>AMAZON-CLONE</i></p>
+          <p>This project is the webpage of Amazon clone. I have used different libraries and CSS frameworks which helped in speedy development and responsiveness.</p>
+          <button onclick="location.href='https://priyanshurwt14.github.io/My-Project/'" type="button"><b>Preview</b></button>
+        </div>
+        <div class="project_photo"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contact" id="contact">
+      <div class="main">
+        <p>Contact</p>
+        <h2>Let's create your <br />next big idea</h2>
+        <button onclick="location.href='https://www.google.com'">Get in touch</button>
+        <p>&copy; Priyanshu Rawat</p>
+      </div>
+    </section>
+  </footer>
+
+</body>
+</html>
